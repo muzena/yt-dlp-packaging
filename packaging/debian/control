@@ -7,7 +7,7 @@ Homepage: https://github.com/yt-dlp/yt-dlp
 Rules-Requires-Root: no
 X-Python3-Version: >= 3.8
 Standards-Version: 4.6.0
-Build-Depends: debhelper-compat (= 13), dh-sequence-python3, bash-completion, dh-exec, pandoc,
+Build-Depends: debhelper, dh-sequence-python3, bash-completion, dh-exec, pandoc,
  zip, quilt, python3 (>= 3.8~)
 
 Package: yt-dlp
