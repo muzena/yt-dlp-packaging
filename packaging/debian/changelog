@@ -1,0 +1,57 @@
+yt-dlp-dmo (2021.10.22-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sat, 23 Oct 2021 09:03:32 +0200
+
+yt-dlp-dmo (2021.10.10-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove francetv patch (tested this time).
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 10 Oct 2021 08:49:54 +0200
+
+yt-dlp-dmo (2021.10.09-dmo2) unstable; urgency=medium
+
+  * Restore francetv patch. This patch has been applied upstream after this
+    release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 10 Oct 2021 02:32:40 +0200
+
+yt-dlp-dmo (2021.10.09-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove francetv patch.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 10 Oct 2021 01:56:50 +0200
+
+yt-dlp-dmo (2021.09.25-dmo2) unstable; urgency=medium
+
+  * Add upstream patch from PR #1096 to fix francetv extractor.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Mon, 04 Oct 2021 13:11:00 +0200
+
+yt-dlp-dmo (2021.09.25-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sat, 25 Sep 2021 07:25:00 +0200
+
+yt-dlp-dmo (2021.09.02-dmo2) unstable; urgency=medium
+
+  * Minimum python version is 3.8 (Doesn't work with python 3.7 under
+    oldstable (buster).
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Thu, 23 Sep 2021 18:09:49 +0200
+
+yt-dlp-dmo (2021.09.02-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Thu, 02 Sep 2021 08:39:41 +0200
+
+yt-dlp-dmo (2021.08.10-dmo1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 24 Aug 2021 20:22:57 +0200

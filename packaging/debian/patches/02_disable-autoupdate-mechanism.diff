@@ -1,0 +1,35 @@
+--- a/yt_dlp/options.py
++++ b/yt_dlp/options.py
+@@ -205,7 +205,7 @@ def parseOpts(overrideArguments=None):
+     general.add_option(
+         '-U', '--update',
+         action='store_true', dest='update_self',
+-        help='Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)')
++        help=optparse.SUPPRESS_HELP)
+     general.add_option(
+         '-i', '--ignore-errors',
+         action='store_true', dest='ignoreerrors',
+--- a/README.md
++++ b/README.md
+@@ -185,11 +185,6 @@ macOS or Linux users that are using Home
+ brew install yt-dlp/taps/yt-dlp
+ ```
+ 
+-### UPDATE
+-You can use `yt-dlp -U` to update if you are using the provided release.
+-If you are using `pip`, simply re-run the same command that was used to install the program.
+-If you have installed using Homebrew, run `brew upgrade yt-dlp/taps/yt-dlp`
+-
+ ### RELEASE FILES
+ 
+ #### Recommended
+@@ -272,9 +267,6 @@ Then simply run `make`. You can also run
+ ## General Options:
+     -h, --help                       Print this help text and exit
+     --version                        Print program version and exit
+-    -U, --update                     Update this program to latest version. Make
+-                                     sure that you have sufficient permissions
+-                                     (run with sudo if needed)
+     -i, --ignore-errors              Ignore download and postprocessing errors.
+                                      The download will be considered successfull
+                                      even if the postprocessing fails

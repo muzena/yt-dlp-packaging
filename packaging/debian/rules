@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME = yt_dlp
+export PATH := $(CURDIR)/debian/utils:$(PATH)
+
+%:
+	dh $@ -Spybuild --with quilt,bash-completion
+
+override_dh_auto_configure:
+	PREFIX=/usr SYSCONFDIR=/etc make
+
+#	mv Makefile Makefile.inactive
+
+#	rm yt_dlp
+
+override_dh_clean:
+#	test -f Makefile || mv Makefile.inactive Makefile
+	make clean
+
+	dh_clean CONTRIBUTING.md completions/zsh/_yt-dlp \
+	yt_dlp.egg-info/SOURCES.txt
+
+override_dh_auto_test:

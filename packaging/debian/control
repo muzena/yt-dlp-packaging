@@ -1,0 +1,27 @@
+Source: yt-dlp-dmo
+Section: web
+Priority: optional
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Homepage: https://github.com/yt-dlp/yt-dlp
+Rules-Requires-Root: no
+X-Python3-Version: >= 3.8
+Standards-Version: 4.6.0
+Build-Depends: debhelper-compat (= 13), dh-sequence-python3, bash-completion, dh-exec, pandoc,
+ zip, quilt, python3 (>= 3.8~)
+
+Package: yt-dlp
+Architecture: all
+Depends: python3-pkg-resources, ${misc:Depends}, ${python3:Depends}, python3-pycryptodome
+Recommends: aria2 | wget | curl, ca-certificates, ffmpeg, mpv | mplayer, rtmpdump, python3-pyxattr
+Suggests: phantomjs, libfribidi-bin | bidiv
+Description: downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
