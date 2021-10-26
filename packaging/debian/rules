@@ -4,7 +4,7 @@ export PYBUILD_NAME = yt_dlp
 export PATH := $(CURDIR)/debian/utils:$(PATH)
 
 %:
-	dh $@ -Spybuild --with quilt,bash-completion
+	dh $@ -Spybuild --with bash-completion
 
 override_dh_auto_configure:
 	PREFIX=/usr SYSCONFDIR=/etc make
