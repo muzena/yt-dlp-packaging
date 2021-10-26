@@ -8,7 +8,7 @@ Rules-Requires-Root: no
 X-Python3-Version: >= 3.8
 Standards-Version: 4.6.0
 Build-Depends: debhelper, dh-sequence-python3, bash-completion, dh-exec, pandoc,
- zip, quilt, python3 (>= 3.8~)
+ zip, quilt, python3 (>= 3.8~), python3-mutagen, python3-websockets
 
 Package: yt-dlp
 Architecture: all
